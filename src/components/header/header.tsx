@@ -9,9 +9,9 @@ function Header() {
   const date = `${current.getDate()}/${current.getMonth()}/${current.getFullYear()}`;
   return (
     <div className='flex justify-around items-center w-full p-5 '>
-        <div className='w-1/2 cursor-pointer pl-3'>
+        <div className='w-1/2  pl-3'>
 
-            <p><a href="#">Meet</a></p>
+            <p className=''><a href="#" className='cursor-pointer'>Meet</a></p>
         </div>
         <div className='flex items-center w-1/2 justify-end pl-3'>
             <div className='w-auto'><p>{date}</p></div>
