@@ -8,22 +8,34 @@ function Header() {
       const current = new Date();
   const date = `${current.getDate()}/${current.getMonth()}/${current.getFullYear()}`;
   return (
-    <div className='flex justify-around items-center w-full'>
-        <div className='w-1/3'>
+    <div className='flex justify-around items-center w-full p-5 '>
+        <div className='w-1/2 cursor-pointer pl-3'>
 
-            <p><a href="#">Meet</a>{date}</p>
-            {/* <p>{current}</p> */}
+            <p><a href="#">Meet</a></p>
         </div>
-        <div className='flex items-center w-2/3 justify-end'>
-            <div className='w-auto'><p>date</p></div>
-            <div className='flex items-center w-1/12'>
-                <img src={QuestionSVG} alt="" height={24} width={24} />
-                <img src={ErrormessageSVG} alt="" height={24} width={24} />
-                <img src={SettingsSVG} alt="" height={24} width={24} />
+        <div className='flex items-center w-1/2 justify-end pl-3'>
+            <div className='w-auto'><p>{date}</p></div>
+            <div className='flex items-center justify-center space-x-1 lg:w-40'>
+                <div className='m-0 p-2.5 rounded-full hover:bg-gray-300'>
+                <img src={QuestionSVG} alt="" height={24} width={24} className='cursor-pointer ' />
+                </div>
+                <div className='m-0 p-2.5 rounded-full hover:bg-gray-300'>
+                <img src={ErrormessageSVG} alt="" height={24} width={24} className='cursor-pointer' />
+                </div>
+
+                <div className='m-0 p-2.5 rounded-full hover:bg-gray-300'>
+                <img src={SettingsSVG} alt="" height={24} width={24} className='cursor-pointer' />
+                </div>
+
             </div>
-            <div className='flex items-center w-1/12'>
-                <img src={AppsSVG} alt=""  height={24} width={24}/>
-                <img src={UserSVG} alt=""  height={24} width={24}/>
+            <div className='flex items-center w-32  justify-center space-x-1'>
+                <div className='m-0 p-2.5 rounded-full hover:bg-gray-300'>
+
+                <img src={AppsSVG} alt=""  height={24} width={24} className='cursor-pointer'/>
+                </div>
+                <div className='m-0 p-2.5 rounded-full hover:bg-gray-300'>
+                <img src={UserSVG} alt=""  height={24} width={24} className='cursor-pointer'/>
+                </div>
             </div>
         </div>
     </div>
