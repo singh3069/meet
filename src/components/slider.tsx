@@ -5,9 +5,36 @@ import "swiper/css/pagination";
 import "./styles.css";
 import { Navigation, Pagination, Keyboard } from "swiper";
 
+const sliderContent =[
+  {
+    img:'https://www.gstatic.com/meet/user_edu_get_a_link_light_90698cd7b4ca04d3005c962a3756c42d.svg',
+    heading:'Get alink that you can share',
+    discription1:'Click New meeting to get a link that you can send',
+    discription2:'to people that you want to meet with'
+  },
+  {
+    img:'https://www.gstatic.com/meet/user_edu_brady_bunch_light_81fa864771e5c1dd6c75abe020c61345.svg',
+    heading:'See everyone together',
+    discription1:'To see more people at the same time, go to Change',
+    discription2:'layout in the More options menu'
+  },
+  {
+    img:'https://www.gstatic.com/meet/user_edu_scheduling_light_b352efa017e4f8f1ffda43e847820322.svg',
+    heading:'Plan ahead',
+    discription1:'Click New meeting to schedule meetings in Google',
+    discription2:'Calender and send invitations to participants'
+  },
+  {
+    img:'https://www.gstatic.com/meet/user_edu_safety_light_e04a2bbb449524ef7e49ea36d5f25b65.svg',
+    heading:'Your meeting is safe',
+    discription1:'',
+    discription2:''
+  },
+]
+
+
 function Slider() {
    
-    
   return (
     <div className=' w-1/2 h-[88.6vh] flex '>
     <>
@@ -19,31 +46,19 @@ function Slider() {
         modules={[Navigation, Pagination, Keyboard]}
         className="mySwiper"
       >
-        <div>
-          <SwiperSlide>
-            <img src="https://www.gstatic.com/meet/user_edu_get_a_link_light_90698cd7b4ca04d3005c962a3756c42d.svg" alt="pic01"  />
-            <p>Get alink that you can share</p>
-            <p>Click New meeting to get a link that you can send</p>
-            <p>to people that you want to meet with</p>
-        </SwiperSlide>
-        </div>
+        {
+          sliderContent.map((item,index)=>{
+            return(
+              <SwiperSlide className="flex flex-rows" key={index}>
+              <img src={item.img} alt="pic01"  />
+            <p>{item.heading}</p>
+            <p>{item.discription1}</p>
+            <p>{item.discription2}</p>
+              </SwiperSlide>
+            )
+          })
+        }
         
-        <SwiperSlide>
-          <img src="https://www.gstatic.com/meet/user_edu_brady_bunch_light_81fa864771e5c1dd6c75abe020c61345.svg" alt="pic02" />
-          <p>See everyone together</p>
-          <p>To see more people at the same time, go to Change</p>
-          <p>layout in the More options menu</p>
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://www.gstatic.com/meet/user_edu_scheduling_light_b352efa017e4f8f1ffda43e847820322.svg" alt="pic04" />
-          <p>Plan ahead</p>
-          <p>Click New meeting to schedule meetings in Google</p>
-          <p>Calender and send invitations to participants</p>
-        </SwiperSlide>
-        <SwiperSlide className="flex flex-rows">
-            <img src="https://www.gstatic.com/meet/user_edu_safety_light_e04a2bbb449524ef7e49ea36d5f25b65.svg" alt="pic04" />
-            <p>Your meeting is safe</p>
-        </SwiperSlide>
       </Swiper>
     </>
     </div>
