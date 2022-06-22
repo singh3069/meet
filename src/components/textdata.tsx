@@ -23,11 +23,12 @@ const DROP_DOWN_DATA = [
 
 
 function Textdata() {
+
   return (
     <div className=" w-1/2 h-[88.6vh]  flex flex-col items-start pt-32 text-center">
     <div className=" flex items-left text-left pl-14 px-40 justify-centers flex-col ">
-    <p className="text-4xl tracking-normal pb-2">Premium video meetings. <br></br> Now free for everyone.</p>
-    <p className="text-lg pb-12 pr-4 pt-1">We re-engineered the service that we built for secure business meetings, Google Meet, to make it free and available for all.</p>
+    <p className="text-5xl  tracking-normal pb-2">Premium video meetings. <br></br> Now free for everyone.</p>
+    <p className="text-lg pb-12 pr-4 pt-3 text-[#5f6368]">We re-engineered the service that we built for secure business meetings, Google Meet, to make it free and available for all.</p>
     <div className='flex space-x-6 relative'>
           <Dropdown />
         <div className='flex border w-62 rounded-md border-black items-center '>
@@ -41,7 +42,7 @@ function Textdata() {
         <input className="outline-none" placeholder='Enter a code or link'/>
         </div>
     </div>
-    <p className=' border-t border-black mt-10 pt-6'><a href='https://meet.google.com/about/redirect/landing-learn-more/?hl=en_GB' className='text-[#1a73e8] hover:border-b-2 border-[#1a73e8]'>Learn More</a> about Google Meet </p>
+    <p className=' border-t border-[#dadce0] mt-10 pt-6'><a href='https://meet.google.com/about/redirect/landing-learn-more/?hl=en_GB' className='text-[#1a73e8] hover:border-b-2 border-[#1a73e8]'>Learn More</a> <span className=' text-[#5f6368]'> about Google Meet</span> </p>
     </div>
     </div>
   )
@@ -57,7 +58,7 @@ export const Dropdown = () => {
       </Menu.Button>
       <Menu.Items as='div' className='absolute -top-5 border bg-white shadow-xl z-10  box-content rounded-md'>
         <Menu.Item>
-          {({ active }) => (
+          
             <div className='space-y-3'>
               {
                 DROP_DOWN_DATA.map((item, index) => {
@@ -72,7 +73,7 @@ export const Dropdown = () => {
                 })
               }
             </div>
-          )}
+          
         </Menu.Item>
       </Menu.Items>
     </Menu>

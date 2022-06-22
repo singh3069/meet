@@ -1,6 +1,6 @@
-import Header from "./components/header/header";
-import Slider from "./components/slider";
-import Textdata from "./components/textdata";
+import Header from "./components/header/Header";
+import Slider from "./components/Slider";
+import Textdata from "./components/Textdata";
 
 
 function App() {

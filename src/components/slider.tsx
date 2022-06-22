@@ -51,9 +51,9 @@ function Slider() {
             return(
               <SwiperSlide className="flex flex-rows" key={index}>
               <img src={item.img} alt="pic01"  />
-            <p>{item.heading}</p>
-            <p>{item.discription1}</p>
-            <p>{item.discription2}</p>
+            <p className="text-2xl font-normal ">{item.heading}</p>
+            <p className="text-sm ">{item.discription1}</p>
+            <p className="text-sm">{item.discription2}</p>
               </SwiperSlide>
             )
           })

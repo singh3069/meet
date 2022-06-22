@@ -29,7 +29,7 @@ function Header() {
 
   
   return (
-    <div className="flex justify-around items-center w-full p-2.5">
+    <div className="flex justify-around items-center w-full p-3">
       <div className="w-1/2  pl-3">
         <div className="flex  space-x-1">
           <img
@@ -38,7 +38,7 @@ function Header() {
           />
           <a
             href="#/"
-            className="cursor-pointer top-2"
+            className="cursor-pointer top-2 text-[#5f6368]"
             style={{
               fontSize: "22px",
             }}
@@ -48,10 +48,10 @@ function Header() {
         </div>
       </div>
       <div className="flex items-center w-1/2 justify-end relative pl-3">
-        <div className="w-auto">
-          <p>
-            {currentTime}.{todaysDate}
-          </p>
+        <div className="w-auto text-lg flex space-x-1 ">
+          <p className="text-[#5f6368]">{currentTime}</p>
+            <span className="text-[#5f6368]">/</span>
+            <p className="text-[#5f6368]">{todaysDate}</p>
         </div>
         <div className="flex items-center justify-center space-x-1 lg:w-40">
           <Dropdown />
