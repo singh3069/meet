@@ -3,9 +3,8 @@ import KeyboardSVG from '../icons/keyboard.svg'
 import CalendarSVG from '../icons/calendar.svg'
 import PlusSVG from '../icons/plus.svg'
 import LinkSVG from '../icons/link.svg'
-// import Modal from '../reusables/Modal'
-// import { useState } from 'react'
 import { Menu } from '@headlessui/react'
+// import Modal from '../reusables/Modal'
 
 const DROP_DOWN_DATA = [
   {
@@ -30,8 +29,7 @@ function TextData() {
     <p className="text-4xl tracking-normal pb-2">Premium video meetings. <br></br> Now free for everyone.</p>
     <p className="text-lg pb-12 pr-4 pt-1">We re-engineered the service that we built for secure business meetings, Google Meet, to make it free and available for all.</p>
     <div className='flex space-x-6 relative'>
-      <Dropdown />
-          {/* <button className="flex flex-row p-3 rounded-md items-center text-white   bg-[#1a73e8]"><img src={VideoCallSVG} alt='vc SVG' width={18} height={18} className='mr-2 text-white '/>New meeting</button> */}
+          <Dropdown />
         <div className='flex border w-62 rounded-md border-black items-center '>
           <img src={KeyboardSVG} alt="keyboard"
             style={{
@@ -64,8 +62,8 @@ export const Dropdown = () => {
               {
                 DROP_DOWN_DATA.map((item, index) => {
                   return (
-                    <div key={index}>
-                      <div className='flex space-x-3 items-center p-3 cursor-pointer hover:bg-gray-300'>
+                    <div key={index} className='py-1' >
+                      <div className='flex space-x-3 items-center p-3 cursor-pointer hover:bg-gray-100'>
                         <img src={item.img} alt="abc" width={18} height={18}/>
                         <span>{item.discription}</span>
                       </div>
