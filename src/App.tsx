@@ -1,6 +1,6 @@
 import Header from "./components/header/header";
 import Slider from "./components/slider";
-import TextData from "./components/textdata";
+import Textdata from "./components/textdata";
 
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
       <Header/>
 
     <div className="flex flex-row">
-      <TextData/>
+      <Textdata/>
       <Slider/>
     </div>
     </div>

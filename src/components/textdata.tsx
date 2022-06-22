@@ -22,7 +22,7 @@ const DROP_DOWN_DATA = [
 ]
 
 
-function TextData() {
+function Textdata() {
   return (
     <div className=" w-1/2 h-[88.6vh]  flex flex-col items-start pt-32 text-center">
     <div className=" flex items-left text-left pl-14 px-40 justify-centers flex-col ">
@@ -47,7 +47,7 @@ function TextData() {
   )
 }
 
-export default TextData
+export default Textdata
 
 export const Dropdown = () => {
   return (
