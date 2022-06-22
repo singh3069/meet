@@ -6,17 +6,7 @@ import UserSVG from '../../icons/user.svg'
 import { Menu } from '@headlessui/react';
 // import Modal from '../../reusables/Modal';
 
-const DROP_DOWN_DATA = [
-  {
-    discription:'Create a meeting for later',
-  },
-  {
-    discription:'Start an instant meeting',
-  },
-  {
-    discription:'Schedule in Google Calendar',
-  }
-]
+const DROP_DOWN_DATA = ['Help','Terms of Service','Privacy Policy','Terms Summary']
 
 function Header() {
       const current = new Date();
@@ -69,7 +59,7 @@ export const Dropdown = () => {
         <Menu.Button className='m-0 p-2.5 rounded-full hover:bg-gray-300'>
                 <img src={QuestionSVG} alt="" height={24} width={24} className='cursor-pointer ' />
                 </Menu.Button>
-      <Menu.Items as='div' className='absolute top-12 right-60 border bg-white shadow-xl z-10  box-content rounded-md'>
+      <Menu.Items as='div' className='absolute w-52 top-12 right-60 border bg-white shadow-xl z-10  box-content rounded-md'>
         <Menu.Item>
           {({ active }) => (
             <div className=''>
@@ -78,7 +68,7 @@ export const Dropdown = () => {
                   return (
                     <div key={index} className='py-1'>
                       <div className='flex space-x-3 items-center p-2 cursor-pointer hover:bg-gray-100'>
-                        <span>{item.discription}</span>
+                        <span>{item}</span>
                       </div>
                     </div>
                   )
