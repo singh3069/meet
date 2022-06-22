@@ -36,7 +36,7 @@ const sliderContent =[
 function Slider() {
    
   return (
-    <div className=' w-1/2 h-[88.6vh] flex '>
+    <div className=' w-full md:w-1/2 lg:h-[88.6vh] flex '>
     <>
       <Swiper
         cssMode={true}
@@ -44,7 +44,7 @@ function Slider() {
         pagination={true}
         keyboard={true}
         modules={[Navigation, Pagination, Keyboard]}
-        className="mySwiper"
+        className="mySwiper w-full lg:w-1/2 right-0 lg:right-10 lg:pt-24 pt-0"
       >
         {
           sliderContent.map((item,index)=>{

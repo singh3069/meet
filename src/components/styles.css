@@ -4,12 +4,12 @@ body {
 }
 
 .swiper {
-    width: 50%;
+    /* width: 50%; */
     height: 50%;
     overflow: revert;
     z-index: 0;
-    padding-top: 100px;
-    right: 40px;
+    /* padding-top: 100px; */
+    /* right: 40px; */
 }
 
 .swiper-wrapper{

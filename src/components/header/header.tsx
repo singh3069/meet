@@ -29,9 +29,9 @@ function Header() {
 
   
   return (
-    <div className="flex justify-around items-center w-full p-3">
-      <div className="w-1/2  pl-3">
-        <div className="flex  space-x-1">
+    <div className=" flex justify-around items-center w-full p-3">
+      <div className=" w-0 md:w-1/2  pl-3">
+        <div className="hidden lg:flex  space-x-1">
           <img
             src="https://www.gstatic.com/meet/google_meet_horizontal_wordmark_2020q4_1x_icon_124_40_2373e79660dabbf194273d27aa7ee1f5.png"
             alt="logo"
@@ -47,8 +47,8 @@ function Header() {
           </a>
         </div>
       </div>
-      <div className="flex items-center w-1/2 justify-end relative pl-3">
-        <div className="w-auto text-lg flex space-x-1 ">
+      <div className="flex  md:items-center w-full md:w-1/2 md:justify-end relative pl-3">
+        <div className="md:w-auto text-lg flex  items-center space-x-1 ">
           <p className="text-[#5f6368]">{currentTime}</p>
             <span className="text-[#5f6368]">/</span>
             <p className="text-[#5f6368]">{todaysDate}</p>
@@ -75,8 +75,8 @@ function Header() {
             />
           </div>
         </div>
-        <div className="flex items-center w-32  justify-center space-x-1">
-          <div className="m-0 p-2.5 rounded-full hover:bg-gray-300">
+        <div className="flex items-center md:w-32  justify-center space-x-1">
+          <div className="m-0 p-2.5 hidden md:block rounded-full hover:bg-gray-300">
             <img
               src={AppsSVG}
               alt=""

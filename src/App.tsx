@@ -8,7 +8,7 @@ function App() {
     <div>
       <Header/>
 
-    <div className="flex flex-row">
+    <div className="flex flex-col lg:flex-row">
       <Textdata/>
       <Slider/>
     </div>
