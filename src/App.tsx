@@ -7,7 +7,6 @@ function App() {
   return (
     <div>
       <Header/>
-
     <div className="flex flex-col lg:flex-row">
       <Textdata/>
       <Slider/>
