@@ -1,5 +1,6 @@
 import VideoCallSVG from '../icons/video.svg'
 import KeyboardSVG from '../icons/keyboard.svg'
+import Modal from '../reusables/Modal'
 
 function TextData() {
   return (
@@ -20,6 +21,7 @@ function TextData() {
         <input className="outline-none" placeholder='Enter a code or link'/>
         </div>
     </div>
+    <Modal/>
     <p className=' border-t border-black mt-10 pt-6'><a href='https://meet.google.com/about/redirect/landing-learn-more/?hl=en_GB' className='text-[#1a73e8] hover:border-b-2 border-[#1a73e8]'>Learn More</a> about Google Meet </p>
     </div>
     </div>
