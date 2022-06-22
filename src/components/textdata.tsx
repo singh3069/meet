@@ -45,7 +45,7 @@ function Textdata() {
         <input className="outline-none" placeholder='Enter a code or link'/>
         </div>
     </div>
-    <p className=' border-t border-[#dadce0] mt-10 pt-6'><a href='https://meet.google.com/about/redirect/landing-learn-more/?hl=en_GB' className='text-[#1a73e8] hidden lg:block hover:border-b-2 border-[#1a73e8]'>Learn More</a> <span className=' text-[#5f6368] hidden lg:block'> about Google Meet</span> </p>
+    <p className=' border-t border-[#dadce0] mt-10 pt-6'><a href='https://meet.google.com/about/redirect/landing-learn-more/?hl=en_GB' className='text-[#1a73e8] hidden lg:inline hover:border-b-2 border-[#1a73e8]'>Learn More</a> <span className=' text-[#5f6368] hidden lg:inline'> about Google Meet</span> </p>
     </div>
     </div>
   )
