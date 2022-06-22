@@ -33,7 +33,7 @@ const sliderContent =[
 ]
 
 
-function slider() {
+function Slider() {
   return (
     <div className=' w-full md:w-1/2  flex m-0 lg:my-24 lg:mx-auto  '>
       
@@ -66,4 +66,4 @@ function slider() {
   )
 }
 
-export default slider
+export default Slider
