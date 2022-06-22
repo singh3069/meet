@@ -36,8 +36,9 @@ const sliderContent =[
 function Slider() {
    
   return (
-    <div className=' w-full md:w-1/2 lg:h-[88.6vh] flex '>
-    <>
+    <div className=' w-full md:w-1/2  flex m-0 lg:my-24 lg:mx-auto  '>
+      
+        <>
       <Swiper
         cssMode={true}
         navigation={true}
